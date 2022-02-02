@@ -60,6 +60,12 @@ export default function Home() {
     return(
         <Container>
             <ToastContainer />
+            <div className="titulo-inserir"> Inserir </div>
+            <div className="inserir">
+                <input className="input-nome" onChange={e => setTitulo(e.target.value)} value={titulo} placeholder='Nome da Atividade'/>
+                <input className="input-descricao" onChange={e => setDescricao(e.target.value)} value={descricao} placeholder='Descrição' />
+                <button className="botao-inserir" onClick={inserir}> Inserir Atividade </button>
+            </div> 
             <div className="titulo"> Atividades </div>
             <div className="box-infos">
                 {atividades.map((item, index) => {
@@ -70,12 +76,6 @@ export default function Home() {
                     />
                 })}
             </div>
-            <div className="titulo-inserir"> Inserir </div>
-            <div className="inserir">
-                <input className="input-nome" onChange={e => setTitulo(e.target.value)} value={titulo} placeholder='Nome da Atividade'/>
-                <input className="input-descricao" onChange={e => setDescricao(e.target.value)} value={descricao} placeholder='Descrição' />
-                <button className="botao-inserir" onClick={inserir}> Inserir Atividade </button>
-            </div> 
         </Container>
     )
 }

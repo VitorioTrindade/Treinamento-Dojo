@@ -1,6 +1,4 @@
-import { useState } from 'react'
 import { Container } from "./listarStyled";
-
 import { toast } from 'react-toastify';
 
 export default function AtividadeBox(props) {
@@ -8,7 +6,8 @@ export default function AtividadeBox(props) {
     const alterarTitulo = () => {
         props.onUpdate(props.index)
         toast.success('Produto Alterado')
-    }
+    } 
+    //Função não está funcionando
 
     const removeAtividade = () => {
         let titulo = props.info.titulo 
@@ -27,7 +26,6 @@ export default function AtividadeBox(props) {
             </div>
             <div className="opcoes"> 
                 <input className="input"
-                        onChange={alterarTitulo}
                         placeholder='Alterar Nome' 
                 />
                 <button className="botao-alterar" onClick={alterarTitulo} > Alterar </button> 

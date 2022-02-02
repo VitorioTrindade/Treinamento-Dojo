@@ -14,18 +14,21 @@ const Container = styled.div`
     .titulo {
         font-size: 2em;
         font-weight: bold;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
     }
 
     .titulo-inserir {
         margin-bottom: 1em;
-        font-size: 1.5em;
+        font-size: 2em;
+        font-weight: bold;
     }
 
     .inserir {
         display: flex;
         flex-direction: row;
         align-items: center;
+
+        margin-bottom 3em;
     }
 
     .inserir input:nth-child(2) {
