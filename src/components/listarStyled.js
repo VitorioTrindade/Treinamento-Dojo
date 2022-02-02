@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
 const Container = styled.div`
+    padding: 2em;
+    border-radius: 20px;
+    background: #141414;
+
+    margin-bottom: 2em;
 
     .informacoes {
         display: flex;
@@ -8,12 +13,28 @@ const Container = styled.div`
         justify-content: space-between;
     }
 
+    .descricao {
+        margin: 0em 2em;
+    }
+
     .opcoes {
-        margin: 2em 0em;
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
     }
 
     .opcoes :nth-child(2) {
         margin: 0em 1em 0em 2em;
+    }
+
+    .input {
+        outline: none;
+        border-radius: 15px;
+        border: none;
+
+        padding: .5em 1em;
+        height: 2em;
+        width: 17.2em;
     }
 
     .botao-alterar,

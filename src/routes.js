@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './pages/index'
+import Home from './pages/home/index'
 import AtividadeContextProvider from './context'
 
 export default function App(){

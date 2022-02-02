@@ -17,6 +17,11 @@ const Container = styled.div`
         margin-bottom: 2em;
     }
 
+    .titulo-inserir {
+        margin-bottom: 1em;
+        font-size: 1.5em;
+    }
+
     .inserir {
         display: flex;
         flex-direction: row;
@@ -27,13 +32,19 @@ const Container = styled.div`
         margin: 0em 3em 0em 1em;
     }
 
-    .input {
+    .input-nome,
+    .input-descricao {
         outline: none;
         border-radius: 15px;
         border: none;
 
         padding: .5em 1em;
         height: 2em;
+        width: 17.2em;
+    }
+
+    .input-descricao {
+        width: 28em;
     }
 
     .botao-inserir {
